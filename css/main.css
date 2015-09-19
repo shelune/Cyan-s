@@ -114,9 +114,85 @@ a {
    Author's custom styles
    ========================================================================== */
 
+.big-wrapper {
+    background: #fff;
+    color: #000;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Aire Pro Regular', serif;
+    font-size: 220px;
+}
 
 
+h2 {
+    font-family: 'Aire Pro Italic', serif;
+    font-size: 150px;
+}
 
+h3 {
+    font-family: 'Aire Pro Italic', serif;
+    font-size: 70px;
+}
+
+span {
+    font-size: 35px;
+    font-family: 'Aire Pro Italic', serif;
+}
+
+.header {
+    position: absolute;
+    top: 30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.top-nav {
+    font-size: 18px;
+    font-family: 'Aire Pro Regular', serif;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    position: relative;
+    float: right;
+}
+
+.top-nav li {
+    display: inline-block;
+}
+
+.top-nav a {
+    text-decoration: none;
+}
+
+.top-nav li {
+    margin: 0 75px;
+}
+
+.center-title {
+    text-align: center;
+    padding-top: 190px;
+    background: url('../img/fish.gif') no-repeat center;
+}
+
+.center-title p {
+    text-indent: -100000px;
+}
 
 
 
