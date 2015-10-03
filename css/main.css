@@ -127,7 +127,6 @@ a {
 
 h1 {
     font-family: 'Aire Pro Regular', serif;
-    font-size: 220px;
 }
 
 
@@ -146,15 +145,20 @@ span {
     font-family: 'Aire Pro Italic', serif;
 }
 
+/*
+///////// HEADER /////////
+*/
+
+
 .header {
-    position: absolute;
-    top: 30px;
+    position: relative;
     margin: 0 auto;
     left: 0;
     right: 0;
 }
 
 .top-nav {
+    margin-top: 15px;
     font-size: 18px;
     font-family: 'Aire Pro Regular', serif;
     line-height: 1.5;
@@ -164,7 +168,9 @@ span {
 }
 
 .nav-left {
+    position: relative;
     float: left;
+    margin-right: 20px;
 }
 
 .nav-right {
@@ -178,6 +184,11 @@ span {
 
 .top-nav a {
     text-decoration: none;
+    padding: 10px;
+}
+
+.top-nav a:hover {
+    color: #A00000;
 }
 
 .top-nav li {
@@ -186,23 +197,105 @@ span {
 
 .center-title {
     text-align: center;
-    padding-top: 190px;
-    background: url('../img/fish.gif') no-repeat center;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .center-title p {
-    text-indent: -100000px;
+    font-family: 'Business Penmanship', sans-serif;
+    font-size: 68.5px;
+    font-weight: bolder;
+    margin-top: 10px;
 }
 
 
+/*
+///////// MAIN SECTION /////////
+*/
+
+.main-section {
+    height: 100vh;
+    background: url(../img/background.png) center 40px no-repeat;
+    background-size: 25%;
+}
+
+/*
+///////// TOUCH 1 /////////
+///////// STARTS /////////
+*/
+
+.touch-1__1 {
+    position: relative;
+}
+
+.touch-1:hover {
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
+    cursor: pointer;
+}
+
+.touch-1__1 h1 {
+    font-size: 180px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.touch-1__content {
+    position: absolute;
+}
+
+.touch-1__9 {
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    margin-left: 290px;
+    margin-top: -40px;
+}
+
+.touch-1__9 h2 {
+    font-size: 125px;
+}
+
+.touch-1__age {
+    position: absolute;
+    top: 250px;
+    margin-left: 290px;
+    margin-top: -30px;
+    line-height: 32px;
+}
+
+.touch-1__line {
+    height: 80px;
+    width: 100px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    -webkit-transform: skewX(45deg);
+    -ms-transform: skewX(45deg);
+    transform: skewX(45deg);
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -160px;
+}
+
+/*
+///////// TOUCH 1 /////////
+///////// ENDS /////////
+*/
 
 
+/*
+///////// TOUCH 2 /////////
+///////// STARTS /////////
+*/
 
+.touch-2 {
+    text-transform: uppercase;
+}
 
-
-
-
-
+/*
+///////// TOUCH 2 /////////
+///////// ENDS /////////
+*/
 
 
 

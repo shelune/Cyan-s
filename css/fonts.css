@@ -7,3 +7,8 @@
     font-family: 'Aire Pro Italic';
     src: url(../fonts/AireProRomanItalic.otf);
 }
+
+@font-face {
+    font-family: 'Business Penmanship';
+    src: url(../fonts/BusinessPenmanship.otf) format ('otf');
+}
