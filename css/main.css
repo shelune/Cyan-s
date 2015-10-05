@@ -131,7 +131,7 @@ h1 {
 
 
 h2 {
-    font-family: 'Aire Pro Italic', serif;
+    font-family: 'Aire Pro Regular', serif;
     font-size: 150px;
 }
 
@@ -165,12 +165,12 @@ span {
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 0.5px;
+    z-index: 10px;
 }
 
 .nav-left {
     position: relative;
     float: left;
-    margin-right: 20px;
 }
 
 .nav-right {
@@ -182,17 +182,24 @@ span {
     display: inline-block;
 }
 
+.nav-left li {
+    margin: 25px 120px 0 0;
+}
+
+.nav-right li {
+    margin-top: 25px;
+    padding-left: 125px;
+    border: 1px solid #989899;
+}
+
 .top-nav a {
     text-decoration: none;
     padding: 10px;
+    font-size: 25px;
 }
 
 .top-nav a:hover {
     color: #A00000;
-}
-
-.top-nav li {
-    margin: 0 75px;
 }
 
 .center-title {
@@ -206,7 +213,7 @@ span {
     font-family: 'Business Penmanship', sans-serif;
     font-size: 68.5px;
     font-weight: bolder;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 
@@ -245,15 +252,15 @@ span {
 }
 
 .touch-1__9 {
-    font-style: normal;
     position: absolute;
     top: 0;
     margin-left: 290px;
-    margin-top: -40px;
+    margin-top: -30px;
 }
 
 .touch-1__9 h2 {
     font-size: 125px;
+    font-style: normal;
 }
 
 .touch-1__age {
@@ -290,6 +297,40 @@ span {
 
 .touch-2 {
     text-transform: uppercase;
+    position: relative;
+}
+
+.touch-2__number {
+    position: absolute;
+    top: 0;
+    margin-top: -120px;
+    margin-left: 95px;
+}
+
+.touch-2__left-side {
+    margin-left: -40px;
+}
+
+.touch-2__left-side span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.touch-2__right-side {
+    position: absolute;
+    top: 0;
+    margin-top: -120px;
+    margin-left: 170px;
+}
+
+.touch-2__right-side h3 {
+    margin-bottom: -25px;
+}
+
+.touch-2__right-side span {
+    margin-left: -25px;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 /*
@@ -297,6 +338,104 @@ span {
 ///////// ENDS /////////
 */
 
+
+
+/*
+///////// TOUCH 3 /////////
+///////// STARTS /////////
+*/
+
+.touch-3 {
+    text-transform: uppercase;
+}
+
+.touch-1:hover {
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
+    cursor: pointer;
+}
+
+.touch-3__3 {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    margin-right: 25px;
+    margin-top: -50px;
+}
+
+.touch-3__3 h1 {
+    font-size: 195px;
+    font-weight: normal;
+}
+
+.touch-3__content {
+    line-height: 25px;
+    position: absolute;
+    top: 0;
+    margin-top: 160px;
+    right: 0;
+}
+
+.touch-3__content span {
+    margin-right: 120px;
+}
+
+.touch-3__content span:first-child(2) {
+
+}
+
+.touch-3__content span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.touch-3__line {
+    height: 80px;
+    width: 220px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    -webkit-transform: skewX(-45deg);
+    -ms-transform: skewX(-45deg);
+    transform: skewX(-45deg);
+    position: absolute;
+    top: 0;
+    margin-top: 260px;
+    right: 0;
+    margin-right: 180px;
+}
+
+/*
+///////// TOUCH 3 /////////
+///////// ENDS /////////
+*/
+
+
+
+/*
+///////// TOUCH 4 /////////
+///////// STARTS /////////
+*/
+
+.touch-4 {
+    position: relative;
+}
+
+.touch-4__4 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -500px;
+    margin-right: 165px;
+}
+
+.touch-4__4 h1 {
+    font-size: 360px;
+    font-weight: normal;
+}
+
+/*
+///////// TOUCH 4 /////////
+///////// ENDS /////////
+*/
 
 
 /* ==========================================================================
