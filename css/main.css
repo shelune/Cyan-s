@@ -189,7 +189,6 @@ span {
 .nav-right li {
     margin-top: 25px;
     padding-left: 125px;
-    border: 1px solid #989899;
 }
 
 .top-nav a {
@@ -269,6 +268,7 @@ span {
     margin-left: 290px;
     margin-top: -30px;
     line-height: 32px;
+    text-transform: uppercase;
 }
 
 .touch-1__line {
@@ -333,6 +333,17 @@ span {
     font-weight: bold;
 }
 
+.touch-2__line {
+    height: 80px;
+    width: 160px;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    -webkit-transform: skewX(-65deg);
+    -ms-transform: skewX(-65deg);
+    transform: skewX(-65deg);
+    position: absolute;
+    margin-left: 300px;
+}
 /*
 ///////// TOUCH 2 /////////
 ///////// ENDS /////////
@@ -349,7 +360,7 @@ span {
     text-transform: uppercase;
 }
 
-.touch-1:hover {
+.touch-3:hover {
     text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
     cursor: pointer;
 }
@@ -359,12 +370,13 @@ span {
     top: 0;
     right: 20%;
     margin-right: 25px;
-    margin-top: -50px;
+    margin-top: 0px;
 }
 
 .touch-3__3 h1 {
     font-size: 195px;
     font-weight: normal;
+    line-height: 120px;
 }
 
 .touch-3__content {
@@ -377,10 +389,6 @@ span {
 
 .touch-3__content span {
     margin-right: 120px;
-}
-
-.touch-3__content span:first-child(2) {
-
 }
 
 .touch-3__content span {
@@ -401,6 +409,7 @@ span {
     margin-top: 260px;
     right: 0;
     margin-right: 180px;
+    z-index: 1;
 }
 
 /*
@@ -430,6 +439,10 @@ span {
 .touch-4__4 h1 {
     font-size: 360px;
     font-weight: normal;
+}
+
+.touch-4__right-side, .touch-4__left-side {
+    text-transform: uppercase;
 }
 
 /*
@@ -520,6 +533,150 @@ span {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (max-width: 1368px) {
+    .top-nav {
+        margin-top: 0px;
+    }
+
+    .center-title p {
+        margin-top: 25px;
+    }
+
+    .main-section {
+        background-size: 283px 550px;
+    }
+
+    .touch-1__1 h1 {            /* +50px left . +30px top*/
+        margin-left: 320px;
+        margin-top: 10px;
+    }
+
+    .touch-1__9, .touch-1__age {
+        margin-left: 360px;
+        margin-top: -70px;
+    }
+
+    .touch-1__age span {
+        font-size: 30px;
+    }
+
+    .touch-1__line {
+        margin-left: 360px;
+    }
+
+    /* TOUCH 2 */
+
+    .touch-2__number {
+        margin-top: -150px;
+        margin-left: 180px;
+    }
+
+    .touch-2__number img {
+        width: 85%;
+    }
+
+    .touch-2__left-side {
+        margin-left: 60px;
+    }
+
+    .touch-2__left-side span {
+        position: absolute;
+        margin-top: -55px;
+    }
+
+    .touch-2__right-side {
+        margin-top: -150px;
+        margin-left: 240px;
+    }
+
+    .touch-2__right-side h3 {
+        font-size: 60px;
+    }
+
+    .touch-2__right-side span {
+        margin-left: -45px;
+    }
+
+    .touch-2__line {
+        height: 70px;
+        width: 210px;
+        margin-top: -40px;
+        margin-left: 255px;
+    }
+
+    /* TOUCH 3 */
+
+    .touch-3__3 {
+        margin-right: 85px;
+        margin-top: -35px;
+    }
+
+    .touch-3__content {
+        margin-top: 100px;
+    }
+
+    .touch-3__content span {
+        margin-right: 180px;
+    }
+
+    .touch-3__line {
+        margin-top: 200px;
+        margin-right: 250px;
+        -webkit-transform: skewX(-65deg);
+        -ms-transform: skewX(-65deg);
+        transform: skewX(-65deg);
+        width: 170px;
+        height: 60px;
+    }
+
+    /* TOUCH 4 */
+
+    .touch-4__4 {
+        margin-top: -530px;
+        margin-right: 240px;
+    }
+
+    .touch-4__right-side {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: -130px;
+        margin-right: 110px;
+    }
+
+    .touch-4__left-side span, .touch-4__left-side h3 {
+        position: absolute;
+        right: 0;
+        margin-right: 300px;
+    }
+
+    .touch-4__left-side span {
+        font-size: 30px;
+        margin-top: 35px;
+    }
+
+    .touch-4__left-side h3 {
+        margin-top: 55px;
+        margin-right: 330px;
+        font-size: 50px;
+    }
+
+    .touch-4__line {
+        height: 140px;
+        width: 220px;
+        border-bottom: 2px solid #000;
+        border-left: 1px solid #000;
+        -webkit-transform: skewX(10deg);
+        -ms-transform: skewX(10deg);
+        transform: skewX(10deg);
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 270px;
+        margin-top: -15px;
+    }
 }
 
 @media print,
