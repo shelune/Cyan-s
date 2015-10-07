@@ -114,6 +114,11 @@ a {
    Author's custom styles
    ========================================================================== */
 
+
+body {
+    overflow: hidden;
+}
+
 .big-wrapper {
     background: #fff;
     color: #000;
@@ -295,6 +300,11 @@ span {
 ///////// STARTS /////////
 */
 
+.touch-2:hover {
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
+    cursor: pointer;
+}
+
 .touch-2 {
     text-transform: uppercase;
     position: relative;
@@ -334,15 +344,16 @@ span {
 }
 
 .touch-2__line {
-    height: 80px;
-    width: 160px;
+    height: 90px;
+    width: 250px;
     border-bottom: 2px solid #000;
     border-right: 2px solid #000;
     -webkit-transform: skewX(-65deg);
     -ms-transform: skewX(-65deg);
     transform: skewX(-65deg);
     position: absolute;
-    margin-left: 300px;
+    margin-left: 190px;
+    margin-top: -50px;
 }
 /*
 ///////// TOUCH 2 /////////
@@ -428,6 +439,11 @@ span {
     position: relative;
 }
 
+.touch-4:hover {
+    text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
+    cursor: pointer;
+}
+
 .touch-4__4 {
     position: absolute;
     right: 0;
@@ -443,6 +459,46 @@ span {
 
 .touch-4__right-side, .touch-4__left-side {
     text-transform: uppercase;
+}
+
+.touch-4__right-side {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -90px;
+    margin-right: 40px;
+}
+
+.touch-4__left-side span, .touch-4__left-side h3 {
+    position: absolute;
+    right: 0;
+    margin-right: 225px;
+}
+
+.touch-4__left-side span {
+    font-size: 30px;
+    margin-top: 65px;
+}
+
+.touch-4__left-side h3 {
+    margin-top: 85px;
+    margin-right: 260px;
+    font-size: 50px;
+}
+
+.touch-4__line {
+    height: 140px;
+    width: 220px;
+    border-bottom: 2px solid #000;
+    border-left: 1px solid #000;
+    -webkit-transform: skewX(10deg);
+    -ms-transform: skewX(10deg);
+    transform: skewX(10deg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 200px;
+    margin-top: 15px;
 }
 
 /*
@@ -563,7 +619,7 @@ span {
     }
 
     .touch-1__line {
-        margin-left: 360px;
+        margin-left: 370px;
     }
 
     /* TOUCH 2 */
