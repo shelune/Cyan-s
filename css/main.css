@@ -242,7 +242,6 @@ span {
 
 .touch-1:hover {
     text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
-    cursor: pointer;
 }
 
 .touch-1__1 h1 {
@@ -302,7 +301,7 @@ span {
 
 .touch-2:hover {
     text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
-    cursor: pointer;
+
 }
 
 .touch-2 {
@@ -373,7 +372,7 @@ span {
 
 .touch-3:hover {
     text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
-    cursor: pointer;
+
 }
 
 .touch-3__3 {
@@ -441,7 +440,7 @@ span {
 
 .touch-4:hover {
     text-shadow: 1px 1px 1px #000, 1px 1px 1px #000;
-    cursor: pointer;
+
 }
 
 .touch-4__4 {
@@ -450,6 +449,7 @@ span {
     top: 0;
     margin-top: -500px;
     margin-right: 165px;
+    z-index: 1;
 }
 
 .touch-4__4 h1 {
@@ -733,6 +733,105 @@ span {
         margin-right: 270px;
         margin-top: -15px;
     }
+}
+
+@media only screen and (max-width: 980px) {
+    .nav-right {
+        float: right;
+    }
+
+    .top-nav a {
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+
+    .center-title p {
+        font-size: 60px;
+    }
+
+
+
+    .touch-1__1 h1 {
+        margin-left: 200px;
+    }
+
+    .touch-1__9, .touch-1__age {
+        margin-left: 240px;
+    }
+
+    .touch-1__line {
+        margin-left: 250px;
+    }
+
+
+
+    .touch-2__number {
+        margin-top: -100px;
+        margin-left: 120px;
+    }
+
+    .touch-2__left-side {
+        margin-left: 10px;
+    }
+
+    .touch-2__left-side span {
+        margin-top: -10px;
+    }
+
+    .touch-2__right-side {
+        margin-left: 180px;
+        margin-top: -100px;
+    }
+
+    .touch-2__line {
+        margin-top: 10px;
+        margin-left: 195px;
+    }
+
+
+
+    .touch-3__3 {
+        margin-right: 35px;
+        margin-top: -45px;
+    }
+
+    .touch-3__content span {
+        margin-right: 90px;
+    }
+
+    .touch-3__line {
+        margin-right: 160px;
+    }
+
+
+
+    .touch-4__4 {
+        margin-right: 200px;
+        margin-top: -520px;
+    }
+
+    .touch-4__right-side {
+        margin-right: 70px;
+        margin-top: -110px;
+    }
+
+    .touch-4__left-side span, .touch-4__left-side h3 {
+        margin-right: 260px;
+    }
+
+    .touch-4__left-side span {
+        margin-top: 40px;
+    }
+
+    .touch-4__left-side h3 {
+        margin-right: 290px;
+    }
+
+    .touch-4__line {
+        margin-right: 230px;
+        margin-top: -5px;
+    }
+
 }
 
 @media print,
