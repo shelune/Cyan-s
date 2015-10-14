@@ -591,6 +591,22 @@ span {
     /* Style adjustments for viewports that meet the condition */
 }
 
+@media only screen and (max-width: 980px) {
+    .nav-right {
+        float: right;
+    }
+
+    .top-nav a {
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+
+    .center-title p {
+        font-size: 60px;
+    }
+
+}
+
 @media only screen and (max-width: 1368px) {
     .top-nav {
         margin-top: 0px;
