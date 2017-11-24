@@ -12,9 +12,13 @@ let paths = {
   srcHTML: 'src/**/*.html',
   srcStyle: 'src/styles/**/*.scss',
   srcJS: 'src/scripts/**/*.js',
+  srcFonts: 'src/assets/fonts/*.{ttf,otf,woff,woff2,eot}',
+  srcImages: 'src/assets/img/*.{png,jpg,gif}',
   distHTML: 'dist',
   distStyle: 'dist/styles',
-  distJS: 'dist/scripts'
+  distJS: 'dist/scripts',
+  distFonts: 'dist/assets/fonts',
+  distImages: 'src/assets/img',
 }
 
 gulp.task('html', function () {
@@ -46,6 +50,16 @@ gulp.task('scripts', function () {
   ]);
 });
 
+gulp.task('fonts', function () {
+  return gulp.src(paths.srcFonts)
+    .pipe(gulp.dest(paths.distFonts));
+});
+
+gulp.task('images', function () {
+  return gulp.src(paths.srcImages)
+    .pipe(gulp.dest(paths.distImages));
+})
+
 gulp.task('watch:scripts', ['scripts'], function (cb) {
   browserSync.reload();
   cb();
@@ -70,10 +84,11 @@ gulp.task('browserSync', function (){
   })
 });
 
-gulp.task('watch', ['browserSync', 'styles', 'html', 'scripts'], function () {
+gulp.task('watch', ['browserSync', 'styles', 'html', 'scripts', 'fonts', 'images'], function () {
   gulp.watch('src/styles/**/*.scss', ['styles']);
   gulp.watch('src/scripts/**/*.js', ['watch:scripts']);
   gulp.watch('src/**/*.html', ['watch:html']);
+  gulp.watch('src/assets/**/*.*', ['fonts', 'images']);
 });
 
 gulp.task('default', function (cb) {
