@@ -6,6 +6,7 @@ let gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   pump = require('pump'),
   browserSync = require('browser-sync').create(),
+  plumber = require('gulp-plumber'),
   del = require('del');
 
 let paths = {
@@ -18,7 +19,7 @@ let paths = {
   distStyle: 'dist/styles',
   distJS: 'dist/scripts',
   distFonts: 'dist/assets/fonts',
-  distImages: 'src/assets/img',
+  distImages: 'dist/assets',
 }
 
 gulp.task('html', function () {
@@ -31,6 +32,12 @@ gulp.task('html', function () {
 
 gulp.task('styles', function () {
   return gulp.src(paths.srcStyle)
+    .pipe(plumber({
+      handleError: function (err) {
+        console.log(err);
+        this.emit('end');
+      }
+    }))
     .pipe(sass())
     .pipe(autoprefixer({
       grid: true

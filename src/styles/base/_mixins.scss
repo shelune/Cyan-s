@@ -1,0 +1,9 @@
+@function division-start($division, $divisionCell) {
+  @return ($division - 1) * 4 + $divisionCell;
+}
+@function division-end($division, $divisionCell) {
+  @return $division * 4 + $divisionCell;
+}
+
+
+

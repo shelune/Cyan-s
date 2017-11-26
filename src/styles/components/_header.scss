@@ -1,0 +1,25 @@
+.header {
+  padding: 20px 60px;
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    @include aire-pro;
+    font-size: 20px;
+    font-weight: bold;
+
+    &.header_link-home {
+      @include business-penmanship;
+      font-size: 68px;
+      font-weight: bold;
+    }
+  }
+}
